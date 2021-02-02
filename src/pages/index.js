@@ -18,11 +18,11 @@ import outsideArticles from '../data/outside-articles'
 
 export default function BlogIndex({ data }) {
   const latest = data.latest.edges
-  const popular = data.popular.edges
+  // const popular = data.popular.edges
   const simplifiedLatest = useMemo(() => getSimplifiedPosts(latest), [latest])
-  const simplifiedPopular = useMemo(() => getSimplifiedPosts(popular), [
-    popular,
-  ])
+  // const simplifiedPopular = useMemo(() => getSimplifiedPosts(popular), [
+  //   popular,
+  // ])
 
   const Section = ({ title, children, button, ...props }) => (
     <section {...props}>
@@ -72,7 +72,7 @@ export default function BlogIndex({ data }) {
         <Section title="Latest Articles" button>
           <Posts data={simplifiedLatest} />
         </Section>
-        <Section title="Outside Articles">
+        <Section title="External Articles">
           <Guides data={outsideArticles} frontPage />
         </Section>
         <Section title="Courses">
@@ -103,25 +103,6 @@ export const pageQuery = graphql`
       limit: 5
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { template: { eq: "post" } } }
-    ) {
-      edges {
-        node {
-          id
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            tags
-          }
-        }
-      }
-    }
-    popular: allMarkdownRemark(
-      limit: 20
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { categories: { eq: "Popular" } } }
     ) {
       edges {
         node {

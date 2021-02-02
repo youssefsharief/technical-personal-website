@@ -1,15 +1,15 @@
 module.exports = {
   siteMetadata: {
-    title: 'Tania Rascia',
+    title: 'Yousof Sharief',
     author: {
-      name: 'Tania Rascia',
+      name: 'Yousof Sharief',
     },
     pathPrefix: '/',
-    siteUrl: 'https://www.taniarascia.com',
+    siteUrl: 'https://www.yousof.net',
     description:
       'Software engineer and open-source creator. This is my digital garden.',
-    feedUrl: 'https://www.taniarascia.com/rss.xml',
-    logo: 'https://www.taniarascia.com/logo.png',
+    feedUrl: 'https://www.yousof.net/rss.xml',
+    logo: 'https://www.yousof.net/logo.png',
   },
   plugins: [
     // ===================================================================================
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Tania Rascia',
-        short_name: 'Tania Rascia',
+        name: 'Yousof Sharief',
+        short_name: 'Yousof Sharief',
         description:
           'Software engineer and open source creator. This is my digital garden.',
         start_url: '/',
@@ -58,7 +58,7 @@ module.exports = {
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [
                     { 'content:encoded': edge.node.html },
-                    { author: 'hello@taniarascia.com' },
+                    { author: 'hello@yousof.net' },
                   ],
                 })
               })
@@ -88,7 +88,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Tania Rascia | RSS Feed',
+            title: 'Yousof Sharief | RSS Feed',
           },
         ],
       },

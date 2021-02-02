@@ -24,18 +24,16 @@ export default function Guides({ data, frontPage }) {
             <div>
               <LinkType guide={guide}>
                 {
-                  guide.externalImage ? <img src={guide.externalImage} /> 
-                  :
-                    guide.staticThumbnail ? (
-                      <img
-                        src={guide.staticThumbnail}
-                        alt={guide.id}
-                        height="50"
-                        width="50"
-                      />
-                    ) : (
-                        <Img fixed={guide.thumbnail} />
-                      )}
+                  guide.staticThumbnail ? (
+                    <img
+                      src={guide.staticThumbnail}
+                      alt={guide.id}
+                      height="50"
+                      width="50"
+                    />
+                  ) : (
+                      <Img fixed={guide.thumbnail} />
+                    )}
               </LinkType>
             </div>
             <div>
