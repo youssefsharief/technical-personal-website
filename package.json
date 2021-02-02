@@ -1,9 +1,9 @@
 {
-  "name": "taniarascia.com",
+  "name": "yousof.net",
   "private": true,
   "version": "3.0.0",
   "description": "Personal website running on Gatsby, React, and Node.js.",
-  "author": "Tania Rascia",
+  "author": "Yousof Sharief",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -38,10 +38,6 @@
     "eslint": "^7.9.0",
     "eslint-config-react-app": "^5.2.1",
     "gatsby-plugin-manifest": "^2.4.30"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/taniarascia/taniarascia.com"
   },
   "resolutions": {
     "gatsby-react-router-scroll": "3.0.3"

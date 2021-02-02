@@ -13,8 +13,8 @@ import { getSimplifiedPosts } from '../utils/helpers'
 import config from '../utils/config'
 
 import projects from '../data/projects'
-import interviews from '../data/interviews'
 import speaking from '../data/speaking'
+import outsideArticles from '../data/outside-articles'
 
 export default function BlogIndex({ data }) {
   const latest = data.latest.edges
@@ -42,11 +42,9 @@ export default function BlogIndex({ data }) {
     <Layout>
       <Helmet title={config.siteTitle} />
       <SEO />
-      <Blurb title="I'm Tania Rascia.">
+      <Blurb title="I'm Yousof Sharief.">
         <p>
-          I'm a software engineer and writer. This website is my digital garden
-          &mdash; a compendium of the things I've learned and created over the
-          years.
+          I'm a software engineer who loves to write performant, readable, minimalist, straightforward code
         </p>
         <p className="stack-mobile">
           <Link className="button" to="/me">
@@ -54,7 +52,7 @@ export default function BlogIndex({ data }) {
           </Link>
           <a
             className="button"
-            href="https://taniarascia.substack.com"
+            href="https://yousof.substack.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -62,7 +60,7 @@ export default function BlogIndex({ data }) {
           </a>
           <a
             className="button"
-            href="https://github.com/taniarascia"
+            href="https://github.com/youssefsharief"
             target="_blank"
             rel="noreferrer"
           >
@@ -74,22 +72,19 @@ export default function BlogIndex({ data }) {
         <Section title="Latest Articles" button>
           <Posts data={simplifiedLatest} />
         </Section>
-        <Section title="Popular Articles" button>
-          <Posts data={simplifiedPopular} />
+        <Section title="Outside Articles">
+          <Guides data={outsideArticles} frontPage />
         </Section>
-        <Section title="Projects">
+        <Section title="Courses">
+        <Guides data={speaking} frontPage />
+        </Section>
+        <Section title="Open Source Projects">
           <Projects data={projects} />
-        </Section>
-        <Section title="Interviews">
-          <Guides data={interviews} frontPage />
-        </Section>
-        <Section title="Speaking">
-          <Guides data={speaking} frontPage />
         </Section>
         <Section title="Newsletter">
           <p>I send out an email when I create something new.</p>
           <a
-            href="https://taniarascia.substack.com/subscribe"
+            href="https://yousof.substack.com/subscribe"
             target="_blank"
             rel="noreferrer"
             className="button large"

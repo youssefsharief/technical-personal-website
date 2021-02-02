@@ -11,10 +11,10 @@ export default function Guides({ data, frontPage }) {
         {children}
       </Link>
     ) : (
-      <a href={guide.path} className="image-link">
-        {children}
-      </a>
-    )
+        <a href={guide.path} className="image-link">
+          {children}
+        </a>
+      )
 
   return (
     <div className={frontPage ? 'guides front-page' : 'guides'}>
@@ -23,16 +23,19 @@ export default function Guides({ data, frontPage }) {
           <div className="guide" key={guide.id}>
             <div>
               <LinkType guide={guide}>
-                {guide.staticThumbnail ? (
-                  <img
-                    src={guide.staticThumbnail}
-                    alt={guide.id}
-                    height="50"
-                    width="50"
-                  />
-                ) : (
-                  <Img fixed={guide.thumbnail} />
-                )}
+                {
+                  guide.externalImage ? <img src={guide.externalImage} /> 
+                  :
+                    guide.staticThumbnail ? (
+                      <img
+                        src={guide.staticThumbnail}
+                        alt={guide.id}
+                        height="50"
+                        width="50"
+                      />
+                    ) : (
+                        <Img fixed={guide.thumbnail} />
+                      )}
               </LinkType>
             </div>
             <div>

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
-import netlify from '../../content/thumbnails/netlify.png'
-import gatsby from '../../content/thumbnails/gatsby.png'
-import github from '../../content/thumbnails/github.png'
+import email from '../../content/thumbnails/email.svg'
+import github from '../../content/thumbnails/github.svg'
+import stackoverflow from '../../content/thumbnails/stackoverflow.svg'
+import linkedin from '../../content/thumbnails/linkedin.svg'
 
 export default function Footer() {
   return (
@@ -13,55 +13,50 @@ export default function Footer() {
           <Link to="/blog">Articles</Link>
           <Link to="/guides">Guides</Link>
           <a
-            href="https://taniarascia.substack.com/subscribe"
+            href="https://yousof.substack.com/subscribe"
             target="_blank"
             rel="noopener noreferrer"
           >
             Newsletter
           </a>
           <Link to="/rss.xml">RSS</Link>
-          <a
-            href="https://ko-fi.com/taniarascia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Donate
-          </a>
-          <a
-            href="https://patreon.com/taniarascia"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Patreon
-          </a>
         </nav>
         <nav className="flex justify-center">
           <a
-            href="https://www.gatsbyjs.org/"
-            title="Built with Gatsby"
+            href="mailto:yousofsharief@protonmail.com"
+            title="yousofsharief@protonmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="img"
           >
-            <img src={gatsby} className="footer-img" alt="Gatsby" />
+            <img src={email} className="footer-img" alt="email" />
           </a>
           <a
-            href="https://github.com/taniarascia"
-            title="Open-source on GitHub"
+            href="https://github.com/youssefsharief"
+            title="GitHub"
             target="_blank"
             rel="noopener noreferrer"
             className="img"
           >
-            <img src={github} className="footer-img" alt="GitHub" />
+            <img src={github} className="footer-img" alt="email" />
           </a>
           <a
-            href="https://www.netlify.com/"
-            title="Hosted by Netlify"
+            href="https://www.linkedin.com/in/youssefsharief"
+            title="Linkedin"
             target="_blank"
             rel="noopener noreferrer"
             className="img"
           >
-            <img src={netlify} className="footer-img" alt="Netlify" />
+            <img src={linkedin} className="footer-img" alt="email" />
+          </a>
+          <a
+            href="http://stackoverflow.com/users/8065736/youssef-sherif"
+            title="Stackoverflow"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="img"
+          >
+            <img src={stackoverflow} className="footer-img" alt="email" />
           </a>
         </nav>
       </section>

@@ -26,7 +26,7 @@ export default function PostTemplate({ data, pageContext }) {
         : 'github-light'
     commentScript.async = true
     commentScript.src = 'https://utteranc.es/client.js'
-    commentScript.setAttribute('repo', 'taniarascia/comments') // CHANGE THIS if you're just going to clone this repo and use the code. Do not test your code using my repo.
+    commentScript.setAttribute('repo', 'youssefsharief/comments')
     commentScript.setAttribute('issue-term', 'pathname')
     commentScript.setAttribute('id', 'utterances')
     commentScript.setAttribute('theme', theme)
@@ -36,7 +36,7 @@ export default function PostTemplate({ data, pageContext }) {
     } else {
       console.log(`Error adding utterances comments on: ${commentBox}`)
     }
-  }, []) // eslint-disable-line
+  }, []) 
 
   return (
     <Layout>
@@ -47,7 +47,7 @@ export default function PostTemplate({ data, pageContext }) {
           <header className="article-header">
             <div className="container">
               <div className="thumb">
-                {thumbnail && (
+              {thumbnail && (
                   <Img
                     fixed={thumbnail.childImageSharp.fixed}
                     className="post-thumbnail"
@@ -57,7 +57,7 @@ export default function PostTemplate({ data, pageContext }) {
                   <h1>{title}</h1>
                   <div className="post-meta">
                     <div>
-                      By <Link to="/me">Tania Rascia</Link> on{' '}
+                      By <Link to="/me">Yousof Sharief</Link> on{' '}
                       <time>{date}</time>
                     </div>
                     {tags && (
@@ -87,26 +87,16 @@ export default function PostTemplate({ data, pageContext }) {
       </div>
       <Blurb title="About the author">
         <p>
-          Hey, I'm <Link to="/me">Tania</Link>, a software engineer, writer, and
-          open-source creator. I publish guides and tutorials about modern
-          JavaScript, design, and programming.
+          Hey, I'm <Link to="/me">Yousof</Link>, a software engineer who loves to write performant, readable, minimalist, straightforward code
         </p>
         <p>
           <a
             className="button"
-            href="https://taniarascia.substack.com"
+            href="https://yousof.substack.com"
             target="_blank"
             rel="noreferrer"
           >
             Join newsletter
-          </a>
-          <a
-            className="button"
-            href="https://ko-fi.com/taniarascia"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Buy me a coffee
           </a>
         </p>
       </Blurb>
