@@ -3,7 +3,7 @@
   "private": true,
   "version": "3.0.0",
   "description": "Personal website running on Gatsby, React, and Node.js.",
-  "author": "Yousof Sharief",
+  "author": "Youssef Sherif",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",

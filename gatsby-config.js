@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Yousof Sharief',
+    title: 'Youssef Sherif',
     author: {
-      name: 'Yousof Sharief',
+      name: 'Youssef Sherif',
     },
     pathPrefix: '/',
     siteUrl: 'https://www.yousof.net',
@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Yousof Sharief',
-        short_name: 'Yousof Sharief',
+        name: 'Youssef Sherif',
+        short_name: 'Youssef Sherif',
         description:
           'Software engineer and open source creator. This is my digital garden.',
         start_url: '/',
@@ -88,7 +88,7 @@ module.exports = {
               }
             `,
             output: '/rss.xml',
-            title: 'Yousof Sharief | RSS Feed',
+            title: 'Youssef Sherif | RSS Feed',
           },
         ],
       },

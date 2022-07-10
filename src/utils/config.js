@@ -1,5 +1,5 @@
 export default {
-  siteTitle: 'Yousof Sharief',
+  siteTitle: 'Youssef Sherif',
   siteUrl: 'https://www.yousof.net',
   siteLogo: '/logo.png',
   description:

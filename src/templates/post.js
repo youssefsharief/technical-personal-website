@@ -57,7 +57,7 @@ export default function PostTemplate({ data, pageContext }) {
                   <h1>{title}</h1>
                   <div className="post-meta">
                     <div>
-                      By <Link to="/me">Yousof Sharief</Link> on{' '}
+                      By <Link to="/me">Youssef Sherif</Link> on{' '}
                       <time>{date}</time>
                     </div>
                     {tags && (

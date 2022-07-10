@@ -12,7 +12,7 @@ export default function Nav() {
               <span className="emoji">
                 <img src={floppy} alt="Floppy Diskette" />
               </span>{' '}
-              Yousof Sharief
+              Youssef Sherif
             </Link>
           </div>
           <div className="flex">

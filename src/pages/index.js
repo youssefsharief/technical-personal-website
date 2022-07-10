@@ -42,7 +42,7 @@ export default function BlogIndex({ data }) {
     <Layout>
       <Helmet title={config.siteTitle} />
       <SEO />
-      <Blurb title="I'm Yousof Sharief.">
+      <Blurb title="I'm Youssef Sherif.">
         <p>
           I'm a software engineer who loves to write performant, readable, minimalist, straightforward code
         </p>

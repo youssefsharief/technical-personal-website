@@ -1,6 +1,6 @@
 import React from 'react'
 
-import personalImage from '../../content/images/yousof.png'
+import personalImage from '../../content/images/personal.jpg'
 
 export default function Blurb({ title, children }) {
   return (
